@@ -1,0 +1,32 @@
+🌟 K-Beauty Hub - Client Access Link 🌟
+
+Your Korean Beauty E-commerce Website is ready!
+
+📱 DIRECT LINK:
+http://localhost:3001?client=true
+
+✨ What You Can Explore:
+• Browse Korean beauty products
+• Add products to favorites (heart icon)
+• Add items to shopping cart
+• Use "Buy Now" for quick purchase
+• Multi-language support (English, Spanish, French, Bengali)
+• AI chatbot for customer service
+• Responsive design (works on mobile & desktop)
+• Modern Korean beauty aesthetic
+
+🎯 How to Use:
+1. Click the link above
+2. Browse through the products
+3. Try adding items to cart
+4. Test the checkout process
+5. Use the heart icon to save favorites
+6. Try different languages
+7. Interact with the chatbot
+
+📝 Note: This is a demonstration version. All data is stored locally and will reset when you refresh the page.
+
+🔒 Security: Admin features are hidden for client viewing.
+
+---
+For any questions, please contact the development team. 
