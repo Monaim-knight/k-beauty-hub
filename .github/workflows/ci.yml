@@ -26,6 +26,12 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
+    - name: Show package.json
+      run: cat package.json
+
+    - name: List available npm scripts
+      run: npm run
+
     - name: Run linter
       run: npm run lint
     
