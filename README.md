@@ -239,7 +239,9 @@ gh-pages -d build
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is for demonstration and educational purposes only. All rights reserved. No part of this codebase may be used, copied, or distributed without explicit permission from the author.
+
+For inquiries, contact: monaimk07@gmail.com
 
 ## 📞 Contact
 
