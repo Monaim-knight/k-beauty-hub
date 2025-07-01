@@ -157,13 +157,6 @@ src/
 - **API Development** - RESTful API with Express.js
 - **Testing Coverage** - Comprehensive test suite expansion
 
-## 📞 Contact Information
-
-- **Portfolio**: [Your Portfolio](https://your-portfolio.com)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **GitHub**: [Your GitHub](https://github.com/yourusername)
-- **Email**: your.email@example.com
-
 ---
 
 **This project demonstrates my ability to build complex, production-ready web applications using modern technologies and best practices. I'm passionate about creating user-friendly, performant, and maintainable code that delivers exceptional user experiences.** 

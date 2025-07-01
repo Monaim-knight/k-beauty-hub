@@ -13,15 +13,15 @@
     "responsive-design",
     "modern-ui"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Monaim-knight <monaimk07@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/k-beauty-hub.git"
+    "url": "https://github.com/Monaim-knight/k-beauty-hub.git"
   },
-  "homepage": "https://github.com/yourusername/k-beauty-hub#readme",
+  "homepage": "https://github.com/Monaim-knight/k-beauty-hub#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/k-beauty-hub/issues"
+    "url": "https://github.com/Monaim-knight/k-beauty-hub/issues"
   },
   "dependencies": {
     "@types/node": "^16.18.0",

@@ -243,9 +243,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Portfolio**: [Your Portfolio](https://your-portfolio.com)
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
+- **Portfolio**: [Your Portfolio](https://your-portfolio-url.com)
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/md-monaim-islam-295928161/)
+- **Email**: monaimk07@gmail.com
 
 ## 🙏 Acknowledgments
 
