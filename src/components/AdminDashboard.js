@@ -18,7 +18,6 @@ import {
 import authManager from '../utils/authManager';
 import activityLogger from '../utils/activityLogger';
 import { products } from '../data/products';
-import UserManagement from './UserManagement';
 import ActivityLogs from './ActivityLogs';
 import ProductManagement from './ProductManagement';
 
@@ -215,7 +214,12 @@ const AdminDashboard = ({ onLogout }) => {
   );
 
   const renderUsers = () => (
-    <UserManagement />
+    <div className="space-y-6">
+      <div className="bg-white rounded-xl shadow-lg p-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">User Management</h2>
+        <p className="text-gray-600">User management interface will be implemented here.</p>
+      </div>
+    </div>
   );
 
   const renderActivities = () => (
