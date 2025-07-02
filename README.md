@@ -8,7 +8,7 @@ A comprehensive, full-stack e-commerce platform built with modern web technologi
 
 ## 🚀 Live Demo
 
-- **Client Portal**: [Demo Link](https://your-demo-link.com)
+- **Client Portal**: [Live Website on Vercel](https://vercel.com/monaim-knights-projects/k-beauty-hub-lwjj)
 - **Admin Panel**: [Admin Demo](https://your-admin-demo-link.com)
 
 ## ✨ Key Features
