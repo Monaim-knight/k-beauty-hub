@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Ruler, Eye, Heart, Package, Users, Info } from 'lucide-react';
+import { ArrowLeft, Ruler, Eye, Heart, Package, Info } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const SizeGuide = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [selectedCategory, setSelectedCategory] = useState('skincare');
 
   const categories = [
@@ -39,7 +39,7 @@ const SizeGuide = () => {
       sizes: [
         { size: 'Makeup Brushes', length: '15-25cm', description: 'Handle length varies by brush type' },
         { size: 'Beauty Blenders', diameter: '5-7cm', description: 'Standard beauty sponge size' },
-        { size: 'Mirrors', size: '10-20cm', description: 'Diameter for handheld mirrors' },
+        { size: 'Mirrors', diameter: '10-20cm', description: 'Diameter for handheld mirrors' },
         { size: 'Tweezers', length: '8-12cm', description: 'Standard tweezers length' },
         { size: 'Eyelash Curlers', width: '2-3cm', description: 'Standard eyelash curler width' }
       ]

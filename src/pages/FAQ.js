@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const FAQ = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [searchTerm, setSearchTerm] = useState('');
   const [openQuestions, setOpenQuestions] = useState(new Set());
 

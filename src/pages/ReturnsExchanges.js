@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const ReturnsExchanges = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [selectedTab, setSelectedTab] = useState('returns');
 
   const returnPolicy = {

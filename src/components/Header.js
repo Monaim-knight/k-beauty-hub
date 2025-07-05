@@ -78,7 +78,7 @@ const Header = ({ onCartClick }) => {
                 isActive('/') ? 'text-pink-600' : 'text-gray-700 hover:text-pink-600'
               }`}
             >
-              {t('home')}
+              Home
             </button>
             <button 
               onClick={() => handleNavigation('/products')}
@@ -86,7 +86,7 @@ const Header = ({ onCartClick }) => {
                 isActive('/products') ? 'text-pink-600' : 'text-gray-700 hover:text-pink-600'
               }`}
             >
-              {t('products')}
+              Products
             </button>
             <button 
               onClick={() => handleNavigation('/about')}
@@ -190,7 +190,7 @@ const Header = ({ onCartClick }) => {
                   isActive('/') ? 'text-pink-600' : 'text-gray-700 hover:text-pink-600'
                 }`}
               >
-                {t('home')}
+                Home
               </button>
               <button 
                 onClick={() => handleNavigation('/products')}
@@ -198,7 +198,7 @@ const Header = ({ onCartClick }) => {
                   isActive('/products') ? 'text-pink-600' : 'text-gray-700 hover:text-pink-600'
                 }`}
               >
-                {t('products')}
+                Products
               </button>
               <button 
                 onClick={() => handleNavigation('/about')}

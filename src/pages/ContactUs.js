@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const ContactUs = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',

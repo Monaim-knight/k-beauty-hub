@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Register = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [registrationMethod, setRegistrationMethod] = useState('email'); // 'email' or 'phone'
   const [formData, setFormData] = useState({
     firstName: '',

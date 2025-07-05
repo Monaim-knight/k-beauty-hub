@@ -152,11 +152,7 @@ const AdminUsers = () => {
     }
   };
 
-  const handleStatusChange = (userId, newStatus) => {
-    setUsers(users.map(user => 
-      user.id === userId ? { ...user, status: newStatus } : user
-    ));
-  };
+
 
   if (!canAccess(['users', 'all'])) {
     return (

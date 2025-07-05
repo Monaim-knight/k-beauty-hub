@@ -16,7 +16,7 @@ import { useAdminAuth } from '../context/AdminAuthContext';
 
 const AdminDashboard = () => {
   const { currentAdmin } = useAdminAuth();
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     totalUsers: 1247,
     totalProducts: 89,
     totalRevenue: 45678,
@@ -25,7 +25,7 @@ const AdminDashboard = () => {
     avgOrderValue: 195.50
   });
 
-  const [recentActivity, setRecentActivity] = useState([
+  const [recentActivity] = useState([
     {
       id: 1,
       type: 'order',
@@ -56,7 +56,7 @@ const AdminDashboard = () => {
     }
   ]);
 
-  const [topProducts, setTopProducts] = useState([
+  const [topProducts] = useState([
     { name: 'Glow Serum', sales: 156, revenue: 12480 },
     { name: 'Moisturizer', sales: 142, revenue: 11360 },
     { name: 'Cleanser', sales: 98, revenue: 7840 },

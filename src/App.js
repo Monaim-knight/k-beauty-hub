@@ -29,8 +29,7 @@ import AdminProducts from './pages/AdminProducts';
 import AdminUsers from './pages/AdminUsers';
 import AdminSettings from './pages/AdminSettings';
 import AdminContent from './pages/AdminContent';
-import SimpleTest from './pages/SimpleTest';
-import SimpleAdminLogin from './pages/SimpleAdminLogin';
+
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -45,6 +44,7 @@ function App() {
                 <Routes>
                   {/* Public Routes */}
                   <Route path="/" element={<Layout><Home /></Layout>} />
+                  <Route path="/home" element={<Layout><Home /></Layout>} />
                   <Route path="/products" element={<Layout><Products /></Layout>} />
                   <Route path="/product/:id" element={<Layout><ProductDetail /></Layout>} />
                   <Route path="/about" element={<Layout><About /></Layout>} />
@@ -56,8 +56,7 @@ function App() {
                   <Route path="/returns" element={<Layout><ReturnsExchanges /></Layout>} />
                   <Route path="/size-guide" element={<Layout><SizeGuide /></Layout>} />
                   <Route path="/faq" element={<Layout><FAQ /></Layout>} />
-                  <Route path="/test" element={<SimpleTest />} />
-                  <Route path="/simple-admin" element={<SimpleAdminLogin />} />
+
                   
                   {/* Admin Routes */}
                   <Route path="/admin/login" element={<AdminLogin />} />

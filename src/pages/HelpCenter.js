@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, ArrowLeft, HelpCircle, Package, CreditCard, Truck, RefreshCw, Shield, User, Heart, MessageCircle } from 'lucide-react';
+import { Search, ArrowLeft, HelpCircle, Package, CreditCard, Truck, RefreshCw, Shield, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const HelpCenter = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
   const [searchTerm, setSearchTerm] = useState('');
 
   const helpCategories = [

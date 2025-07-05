@@ -5,7 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const ShippingInfo = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
 
   const shippingOptions = [
     {
