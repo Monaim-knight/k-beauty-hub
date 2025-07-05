@@ -1,24 +1,25 @@
 import React from 'react';
-import { Heart, Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Heart, Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Footer = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const quickLinks = [
-    { name: t('home'), href: '#' },
-    { name: t('products'), href: '#' },
-    { name: t('categories'), href: '#' },
-    { name: t('about'), href: '#' }
+    { name: t('home'), path: '/' },
+    { name: t('products'), path: '/products' },
+    { name: t('about'), path: '/about' }
   ];
 
   const customerService = [
-    { name: t('contactUs'), href: '#' },
-    { name: t('helpCenter'), href: '#' },
-    { name: t('shippingInfo'), href: '#' },
-    { name: t('returnsExchanges'), href: '#' },
-    { name: t('sizeGuide'), href: '#' },
-    { name: t('faq'), href: '#' }
+    { name: t('contactUs'), path: '/contact' },
+    { name: t('helpCenter'), path: '/help' },
+    { name: t('shippingInfo'), path: '/shipping' },
+    { name: t('returnsExchanges'), path: '/returns' },
+    { name: t('sizeGuide'), path: '/size-guide' },
+    { name: t('faq'), path: '/faq' }
   ];
 
   const legal = [
@@ -28,10 +29,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' }
+    { icon: Instagram, href: 'https://www.instagram.com/kbeautyhub', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/kbeautyhub', label: 'Facebook' },
+    { icon: Twitter, href: 'https://twitter.com/kbeautyhub', label: 'Twitter' },
+    { icon: Youtube, href: 'https://www.youtube.com/@MonaimKnight', label: 'YouTube' },
+    { icon: MessageCircle, href: 'https://wa.me/491724516678', label: 'WhatsApp' }
   ];
 
   return (
@@ -74,12 +76,21 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-pink-400 text-sm transition-colors duration-200"
+                  <button
+                    onClick={() => {
+                      navigate(link.path);
+                      // Scroll to top after navigation
+                      setTimeout(() => {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: 'smooth'
+                        });
+                      }, 100);
+                    }}
+                    className="text-gray-300 hover:text-pink-400 text-sm transition-colors duration-200 text-left"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -91,12 +102,21 @@ const Footer = () => {
             <ul className="space-y-2">
               {customerService.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-pink-400 text-sm transition-colors duration-200"
+                  <button
+                    onClick={() => {
+                      navigate(link.path);
+                      // Scroll to top after navigation
+                      setTimeout(() => {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: 'smooth'
+                        });
+                      }, 100);
+                    }}
+                    className="text-gray-300 hover:text-pink-400 text-sm transition-colors duration-200 text-left"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

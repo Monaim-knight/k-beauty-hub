@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { X, Minus, Plus, Trash2 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-interface CartProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
+const Cart = ({ isOpen, onClose }) => {
   const { state, removeItem, updateQuantity, clearCart } = useCart();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
 
@@ -121,7 +116,7 @@ const Cart: React.FC<CartProps> = ({ isOpen, onClose }) => {
               <button
                 onClick={handleCheckout}
                 disabled={isCheckingOut}
-                className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-gray-400 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200"
+                className="w-full bg-pink-600 hover:bg-pink-700 disabled:bg-gray-400 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200"
               >
                 {isCheckingOut ? 'Processing...' : 'Checkout'}
               </button>

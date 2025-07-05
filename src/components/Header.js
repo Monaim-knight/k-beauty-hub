@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ShoppingCart, Search, Menu, X, Heart, User, Settings, Info } from 'lucide-react';
+import { ShoppingCart, Search, Menu, X, Heart, User, Info } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useFavorites } from '../context/FavoritesContext';
@@ -25,7 +25,7 @@ const Header = ({ onCartClick }) => {
   };
 
   const handleNavigation = (path) => {
-    // If clicking a button while already on that page, scroll to top
+    // Always scroll to top when navigating
     if (path === location.pathname) {
       window.scrollTo({
         top: 0,
@@ -33,21 +33,20 @@ const Header = ({ onCartClick }) => {
       });
     } else {
       navigate(path);
+      // Scroll to top after navigation
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 100);
     }
     setIsMenuOpen(false);
   };
 
-  const handleAdminClick = () => {
-    // Open admin in new tab
-    window.open('/admin', '_blank');
-    setIsMenuOpen(false);
-  };
 
-  const isClientMode = () => {
-    // Check if we're in client mode (can be set via URL parameter or environment)
-    return window.location.search.includes('client=true') || 
-           process.env.REACT_APP_CLIENT_MODE === 'true';
-  };
+
+
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -98,17 +97,7 @@ const Header = ({ onCartClick }) => {
               <Info className="h-4 w-4 mr-1" />
               About
             </button>
-            {!isClientMode() && (
-              <button 
-                onClick={handleAdminClick}
-                className={`font-medium transition-colors duration-200 flex items-center ${
-                  isActive('/admin') ? 'text-purple-600' : 'text-gray-700 hover:text-purple-600'
-                }`}
-              >
-                <Settings className="h-4 w-4 mr-1" />
-                Admin
-              </button>
-            )}
+
           </nav>
 
           {/* Search Bar */}
@@ -133,7 +122,10 @@ const Header = ({ onCartClick }) => {
             <LanguageSwitcher />
             
             {/* User Account */}
-            <button className="hidden md:flex items-center justify-center w-10 h-10 text-gray-600 hover:text-pink-600 transition-colors duration-200">
+            <button 
+              onClick={() => handleNavigation('/register')}
+              className="hidden md:flex items-center justify-center w-10 h-10 text-gray-600 hover:text-pink-600 transition-colors duration-200"
+            >
               <User className="h-5 w-5" />
             </button>
 
@@ -217,17 +209,7 @@ const Header = ({ onCartClick }) => {
                 <Info className="h-4 w-4 mr-2" />
                 About
               </button>
-              {!isClientMode() && (
-                <button 
-                  onClick={handleAdminClick}
-                  className={`text-left font-medium py-2 transition-colors duration-200 flex items-center ${
-                    isActive('/admin') ? 'text-purple-600' : 'text-gray-700 hover:text-purple-600'
-                  }`}
-                >
-                  <Settings className="h-4 w-4 mr-2" />
-                  Admin
-                </button>
-              )}
+
             </nav>
           </div>
         )}
