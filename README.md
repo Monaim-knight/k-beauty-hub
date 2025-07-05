@@ -8,6 +8,7 @@ A comprehensive, full-stack e-commerce platform built with modern web technologi
 
 ## 🚀 Live Demo
 
+- **🌐 Live Website**: [K-Beauty Hub on Netlify](https://vocal-truffle-e7c20a.netlify.app/)
 - **Client Portal**: [Live Website on Vercel](https://vercel.com/monaim-knights-projects/k-beauty-hub-lwjj)
 - **Admin Panel**: [Admin Demo](https://your-admin-demo-link.com)
 
